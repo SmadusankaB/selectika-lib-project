@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { C_AppResults, C_NetResults, C_WcResults } from '../../../../../lib/gam/C_ResultDef';
-import { C_DbItem } from '../../../../../lib/gam/C_DbItem';
-import { eLearn, eResultType } from '../../../../../lib/gam/Enums';
-import { C_AskCmd, C_InitRequest } from '../../../../../lib/gam/C_ServerCmd';
+import { C_AppResults, C_NetResults, C_WcResults } from '../slk-lib/gam/C_ResultDef';
+import { C_DbItem } from '../slk-lib/gam/C_DbItem';
+import { eLearn, eResultType } from '../slk-lib/gam/Enums';
+import { C_AskCmd, C_InitRequest } from '../slk-lib/gam/C_ServerCmd';
 
 /*
   NOTICE - this file is duplicated in ASK_WC!! and ASK_BACK OFFICE (know as client)

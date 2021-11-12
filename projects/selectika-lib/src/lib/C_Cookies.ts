@@ -1,11 +1,11 @@
 import { CookieService } from 'ngx-cookie-service';
-import { C_ReUtCaFeTa } from '../../../../../lib/gam/C_ReUtCaFeTa';
-import { CAbsUser } from '../../../..//../lib/gam/C_AbsCategory';
-import { CAbsFeature } from '../../../../../lib/gam/C_AbsFeature';
-import { CFeatureInfo } from '../../../../../lib/gam/C_FeatureInfo';
+import { C_ReUtCaFeTa } from '../slk-lib/gam/C_ReUtCaFeTa';
+import { CAbsUser } from '../slk-lib/gam/C_AbsCategory';
+import { CAbsFeature } from '../slk-lib/gam/C_AbsFeature';
+import { CFeatureInfo } from '../slk-lib/gam/C_FeatureInfo';
 import { v4 as uuidv4 } from 'uuid';
-import { CLoadItemsParams } from '../../../../../lib/gam/C_AbsGeneral';
-import { eQueryState } from '../../../../../lib/gam/Enums';
+import { CLoadItemsParams } from '../slk-lib/gam/C_AbsGeneral';
+import { eQueryState } from '../slk-lib/gam/Enums';
 
 
 // tslint:disable-next-line: class-name

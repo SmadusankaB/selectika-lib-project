@@ -3,18 +3,18 @@ import { AskService } from './ask.service';
 import { CookieService } from 'ngx-cookie-service';
 import { C_Cookies } from './C_Cookies';
 
-import { CFeatureInfo } from '../../../../../lib/gam/C_FeatureInfo';
-import { CLoadItemsParams } from '../../../../../lib/gam/C_AbsGeneral';
-import { I_UTR, C_ReUtCaFeTa } from '../../../../../lib/gam/C_ReUtCaFeTa';
-import { C_User } from '../../../../../lib/gam/C_User';
-import { C_UtCatalogs } from '../../../../../lib/gam/C_UserTypeConfig';
-import { C_RetailerData } from '../../../../../lib/gam/C_RetailerData';
-import { CAbsCategory, CAbsItem, I_ItemCategory } from '../../../../../lib/gam/C_AbsCategory';
-import { CAbsFeature } from '../../../../../lib/gam/C_AbsFeature';
-import { C_Select, C_Selector, eConfigGui } from '../../../../../lib/gam/C_Selector';
-import { eFeatureType, eGlobalConst, eRequestedBy, eResultType } from '../../../../../lib/gam/Enums';
-import { C_AppSelect } from '../../../../../lib/gam/C_AppSelect';
-import { C_InitRequest } from '../../../../../lib/gam/C_ServerCmd';
+import { CFeatureInfo } from '../slk-lib/gam/C_FeatureInfo';
+import { CLoadItemsParams } from '../slk-lib/gam/C_AbsGeneral';
+import { I_UTR, C_ReUtCaFeTa } from '../slk-lib/gam/C_ReUtCaFeTa';
+import { C_User } from '../slk-lib/gam/C_User';
+import { C_UtCatalogs } from '../slk-lib/gam/C_UserTypeConfig';
+import { C_RetailerData } from '../slk-lib/gam/C_RetailerData';
+import { CAbsCategory, CAbsItem, I_ItemCategory } from '../slk-lib/gam/C_AbsCategory';
+import { CAbsFeature } from '../slk-lib/gam/C_AbsFeature';
+import { C_Select, C_Selector, eConfigGui } from '../slk-lib/gam/C_Selector';
+import { eFeatureType, eGlobalConst, eRequestedBy, eResultType } from '../slk-lib/gam/Enums';
+import { C_AppSelect } from '../slk-lib/gam/C_AppSelect';
+import { C_InitRequest } from '../slk-lib/gam/C_ServerCmd';
 
 @Injectable({
   providedIn: 'root'

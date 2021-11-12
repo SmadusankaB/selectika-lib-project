@@ -15,11 +15,13 @@
       "es2018",
       "dom"
     ],
+    // "types": ["node"],
     "paths": {
       "selectika-lib": [
         "../../dist/selectika-lib/selectika-lib",
         "../../dist/selectika-lib"
-      ]
+      ],
+      "@angular/*": ["./node_modules/@angular/*"]
     }
   }
 }
