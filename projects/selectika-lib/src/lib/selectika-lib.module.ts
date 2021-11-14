@@ -8,9 +8,10 @@ import { from } from 'rxjs';
 import { CanvasComponent } from './components/canvas/canvas.component';
 import { TagFeatureComponent } from './components/tag-feature/tag-feature.component';
 import { RetailerSelectComponent } from './components/retailer-select/retailer-select.component';
+import { TagItemCategoryComponent } from './components/tag-item-category/tag-item-category.component';
 
 @NgModule({
-  declarations: [CanvasComponent, TagFeatureComponent, RetailerSelectComponent],
+  declarations: [CanvasComponent, TagFeatureComponent, RetailerSelectComponent, TagItemCategoryComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -18,6 +19,6 @@ import { RetailerSelectComponent } from './components/retailer-select/retailer-s
     MatSelectModule,
     MatGridListModule,
   ],
-  exports: [CanvasComponent, TagFeatureComponent, RetailerSelectComponent]
+  exports: [CanvasComponent, TagFeatureComponent, RetailerSelectComponent, TagItemCategoryComponent]
 })
 export class SelectikaLibModule { }

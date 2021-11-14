@@ -1,0 +1,33 @@
+  <h1>Category: {{inCategory?.name}}</h1>
+  <mat-grid-list cols="2" rowHeight="60px">
+    <mat-grid-tile *ngFor="let feature of inCategory.vals;  index as j">
+      <div *ngIf="isEditable(j); then thenBlock else elseBlock"></div>
+      <ng-template #thenBlock>
+        <app-tag-feature [inFeature]="feature" [inOptions]="inOptions.vals[j]"
+        [withColor]="true" 
+          (update)="onUpdateFeature($event)">
+        </app-tag-feature>
+      </ng-template>
+      
+      <ng-template #elseBlock>
+        {{showFeature(j)}}
+      </ng-template>
+
+    </mat-grid-tile>
+  </mat-grid-list>
+
+
+  <div *ngIf="mShowButtons">
+    <div fxLayout="col" fxLayoutAlign="space-evenly center">
+      <div *ngIf="mShowOK; then thenBlock else elseBlock"></div>
+      <ng-template #thenBlock>
+        <button (click)="onClickPartial()" disabled >SAVE-partial</button>
+        <button (click)="onClickOK()">SAVE {{inCategory?.name}}</button>
+      </ng-template>
+
+      <ng-template #elseBlock >
+        <button (click)="onClickPartial()">SAVE-partial</button>
+        <button (click)="onClickOK()" disabled>SAVE {{inCategory?.name}}</button>
+      </ng-template>
+    </div>
+  </div>

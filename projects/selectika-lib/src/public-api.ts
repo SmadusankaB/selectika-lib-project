@@ -67,6 +67,7 @@ export * from './lib/slk-lib/gam/Enums';
 export * from './lib/components/canvas/canvas.component';
 export * from './lib/components/tag-feature/tag-feature.component';
 export * from './lib/components/retailer-select/retailer-select.component';
+export * from './lib/components/tag-item-category/tag-item-category.component';
 
 // Module
 export * from './lib/selectika-lib.module';
