@@ -2,6 +2,8 @@
  * Public API Surface of selectika-lib
  */
 
+import { from } from 'rxjs';
+
 export * from './lib/common/app.configService';
 export * from './lib/common/ask.service';
 export * from './lib/common/C_Cookies';
@@ -68,6 +70,13 @@ export * from './lib/components/canvas/canvas.component';
 export * from './lib/components/tag-feature/tag-feature.component';
 export * from './lib/components/retailer-select/retailer-select.component';
 export * from './lib/components/tag-item-category/tag-item-category.component';
+export * from './lib/components/tag-user-category/tag-user-category.component';
+
+// Services
+export * from './lib/services/firebased/firebase.service';
+export * from './lib/services/auth/auth.guard';
+export * from './lib/services/auth/constants';
+
 
 // Module
 export * from './lib/selectika-lib.module';

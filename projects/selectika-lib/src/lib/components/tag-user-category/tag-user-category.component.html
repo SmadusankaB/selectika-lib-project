@@ -1,0 +1,21 @@
+  <h1>{{inCategory}} : {{inUser.getUT()}}</h1>
+  <div fxLayout="row wrap" fxLayoutAlign="space-between stretch">
+    
+    <div fxFlex="48" *ngFor="let feature of inUser.mFeatures;  index as j">
+
+      <div *ngIf="isDisplayable(j); then thenBlock else elseBlock"></div>
+      <ng-template #thenBlock>
+        <app-tag-feature [inFeature]="feature.values" [inOptions]="inUser.mFeatures[j].options"
+          (update)="onUpdateFeature($event)">
+        </app-tag-feature>
+      </ng-template>
+      <ng-template #elseBlock>
+        {{displayOnly(j)}}
+        
+      </ng-template>
+    </div>
+  </div>
+
+  <div *ngIf="mShowOK">
+    <button mat-raised-button (click)="onClickOK()">OK-SAVE {{inCategory}}</button>
+  </div>
