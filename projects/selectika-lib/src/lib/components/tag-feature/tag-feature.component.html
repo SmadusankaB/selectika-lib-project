@@ -1,0 +1,25 @@
+<mat-form-field *ngIf="showFeature">
+  <mat-label>{{inFeature.name}}</mat-label>
+  <div *ngIf="isFeatureMultipleSelect(); then thenBlock else elseBlock"></div>
+  <ng-template #thenBlock>
+    <!-- MULTIPLE -->
+    <mat-select  [(value)]="inFeature.vals" name="inFeature.name"
+      (selectionChange)="onFeatureChange()" multiple>
+      <mat-option style.color="{{setColor()}}" class="not-empty-select"
+        *ngFor="let tag of inOptions.vals; index as i"
+        [disabled]="isDisabled(i)" [value]="tag">
+        {{tag}} </mat-option>
+    </mat-select>
+  </ng-template>
+
+  <ng-template #elseBlock>
+    <!-- SINGLE -->
+    <mat-select [(value)]="inFeature.vals[0]" name="inFeature.name"
+      (selectionChange)="onFeatureChange()">
+       <mat-option style.color="{{setColor()}}" class="not-empty-select" *ngFor="let tag of inOptions.vals"
+         [value]="tag">
+         {{tag}}
+      </mat-option>
+    </mat-select>
+  </ng-template>
+</mat-form-field>
