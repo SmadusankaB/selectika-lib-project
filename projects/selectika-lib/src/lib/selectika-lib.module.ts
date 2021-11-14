@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
-import { SelectikaLibComponent } from './selectika-lib.component';
+import { CommonModule } from '@angular/common';
+import { CanvasComponent } from './components/canvas/canvas.component';
+import { from } from 'rxjs';
 
 
 
 @NgModule({
-  declarations: [SelectikaLibComponent],
+  declarations: [CanvasComponent],
   imports: [
+    CommonModule
   ],
-  exports: [SelectikaLibComponent]
+  exports: [CanvasComponent]
 })
 export class SelectikaLibModule { }
