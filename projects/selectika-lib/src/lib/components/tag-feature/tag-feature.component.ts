@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { CAbsFeature, AppConfigService } from 'selectika-lib';
+import { AppConfigService } from '../../common/app.configService';
+import { CAbsFeature } from '../../slk-lib/gam/C_AbsFeature'
 
 @Component({
   selector: 'app-tag-feature',

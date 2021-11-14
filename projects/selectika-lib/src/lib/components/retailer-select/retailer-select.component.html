@@ -1,0 +1,9 @@
+<div *ngIf="mDisplayReady" fxLayout="row" fxLayoutAlign="space-evenly center">
+  <div  *ngFor="let select of mSelectors; index as i">
+    <div *ngIf="inUse(i)">
+      <app-tag-feature *ngIf="needToDisplay(i)" [inFeature]="select.values" [inOptions]="select.options"
+        (update)="onUpdate($event, i)">
+      </app-tag-feature>
+    </div>
+  </div>
+</div>
